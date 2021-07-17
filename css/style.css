@@ -1,0 +1,109 @@
+/*
+File: style.css
+GUI Assignment: Creating Your First Web Page
+Alex Bircsak, UMass Lowell Computer Science, alex_bircsak@student.uml.edu
+Copyright (c) 2021 by Alex. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by AB on July 16, 2021
+Description: Stylesheet for index.html
+Source: https://www.w3schools.com/ pages for html used for reference.
+*/
+
+body {
+    background-color: rgba(224, 224, 96, 1.0);
+}
+
+header {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+
+    font-size: 150%;
+    font-style: oblique;
+    text-align: center;
+}
+header::first-line {
+    font-size: 200%;
+    font-style: normal;
+}
+
+footer {
+    padding: 8px;
+    font-style: italic;
+    text-align: center;
+}
+
+table {
+    table-layout: fixed;
+    /* I can't figure out how to remove the small margin/padding(?) to the right of  the images,
+     so I'm matching the table bacground color to the image background color to disguise the gap. */
+    background-color: rgba(168,208,160,1.0);
+    /* Border */
+    border-color: rgba(64, 32, 0, 1.0);
+    border-spacing: 0px;
+    border-style: solid;
+    /* Center the table */
+    margin-left: auto;
+    margin-right: auto;
+}
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 0px;
+    overflow: hidden;
+    max-width: 558px;
+    height: 200px;
+}
+/* Header row formatting. */
+th {
+    background-color: rgba(220, 194, 135, 1.0);
+    height: auto;
+    padding: 8px;
+}
+/* Last column is formatted for text. */
+td:last-child {
+    background-color: rgba(244,244,198,1.0);
+    min-width: 160px;
+    padding: 8px;
+    vertical-align: top;
+}
+
+/* Enlarge the sprite so it's easier to see details,
+ and trim excessive greenscreen so it fits better on the page. */
+figure {
+    overflow: hidden;
+    /* border: 1px solid red; */
+    margin-top: -55%;
+    margin-bottom: -50%;
+    margin-left: -50%;
+}
+img {
+    height: 640px;
+    width: auto;
+    image-rendering: pixelated; /*https://stackoverflow.com/questions/29134237/make-images-larger-in-html-with-no-blur*/
+}
+
+dt {
+    font-weight: 550;
+}
+/* Reduced indent margin. */
+dd {
+    margin-left: 20px;
+}
+/* Lead description with a different kind of bullet depending on their status.  */
+.done::before {
+    content: "\2611  ";
+    color: green;
+}
+.wip::before {
+    content: "\2610  ";
+    color: goldenrod;
+}
+.todo::before {
+    content: "\2612  ";
+    color: darkred;
+}
+
+p a {
+    font-style: italic;
+}

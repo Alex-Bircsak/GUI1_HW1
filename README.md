@@ -1,1 +1,1 @@
-# GUI1_HW1
+# First Web Page project for UML CS GUI 1.
