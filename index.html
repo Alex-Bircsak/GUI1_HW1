@@ -19,12 +19,20 @@ Source: https://www.w3schools.com/ pages for html used for reference.
         <script src="script.js"></script>
     </head>
     <body>
+        <!-- Header with page title and subtitle. -->
         <header>First Web Page<br>GUI Homework 1</header>
+        <!-- Div with blurb explaining the table contents. -->
         <div>
             <p>I've been playing with the data files from the video game <a href="https://en.wikipedia.org/wiki/Fire_Emblem:_The_Sacred_Stones" >Fire Emblem: The Sacred Stones</a> for both fun and practice, and my latest minor project is modifying the generic battle sprite animations so that they more closely resemble how the characters look in their official art.</p>
             <p>What follows is a sample of some of the modified animations I'm working on, followed by a link to a page cntaing the character art I'm using as a reference. I've also icluded a list of changes that I have made, have partially completed, and plan to make.</p>
         </div>
-        <!-- Table containing side-by-sde animations and descriptions. -->
+        <!--
+            Table containing side-by-sde animations and descriptions.
+            Images have both alt text and hovertext.
+            1st column: Original animation.
+            2nd column: Custom animation.
+            3rd column: List of changes.
+        -->
         <table>
             <tr>
                 <th>Original Sprite Animation</th>
@@ -92,8 +100,21 @@ Source: https://www.w3schools.com/ pages for html used for reference.
                 </td>
             </tr>
         </table>
+        <!-- Footer containing copyright information and w3s validation images. -->
         <footer>
-            Fire Emblem: The Sacred Stones © 2004-2005 by Nintendo / Intelligent Systems
+            <p>Fire Emblem: The Sacred Stones © 2004-2005 by Nintendo / Intelligent Systems</p>
+            <span>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="https://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="Valid CSS!" />
+                </a>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="Valid CSS!" />
+                </a>
+            </span>             
         </footer>
     </body>
 </html>
